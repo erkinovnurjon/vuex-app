@@ -1,23 +1,11 @@
-
+import auth from '../modules/auth'
 import { createStore } from 'vuex'
 
 
 const store = createStore({
-  state () {
-    return {
-      count: 0
-    }
-  },
-  mutations: {
-    increment (state) {
-      state.count++
-    }
-  }
+  state: {},
+  mutations : {},
+  actions : {},
+  modules : {auth},
 })
-
-const app = createApp({ /* your root component */ })
-
-
-app.use(store)
-
 export default store

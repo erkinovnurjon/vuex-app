@@ -11,7 +11,7 @@
     
     
 
-    <Button type="submit">sign in</Button>
+    <Button type="submit" :disabled="isLoading" @click="submitHandler" >Sign in</Button>
     
     
   </form>
@@ -25,7 +25,18 @@ export default {
       return {
         logo
       }
-     } 
+     } ,
+     computed: {
+      isLoading(){
+        return this.$store.state.auth.isLoading
+      },
+     },
+     methods: {
+      submitHandler(e){
+       e.preventDefault()
+       this.$store.dispatch('register')
+      }
+     },
 }
 </script>
 

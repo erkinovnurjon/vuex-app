@@ -1,6 +1,6 @@
 <template >
       <div class="form-floating my-3">
-      <input :type="type" class="form-control " id="floatingPassword" :placeholder="label" >
+      <input :type="type" class="form-control " id="floatingPassword" :placeholder="label" required >
       <label for="floatingPassword">{{ label }}</label>
     </div>
 </template>
