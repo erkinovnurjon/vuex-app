@@ -1,11 +1,11 @@
+import AuthServise from "../service/auth";
+
 const state = {
       isLoading : false,
 }
 const actions ={
       register(context){
-            setTimeout(() => {
-                  context.commit('setLoading')
-            }, 2000);
+            
       }
 }
 const mutations = {

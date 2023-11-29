@@ -34,7 +34,12 @@ export default {
      methods: {
       submitHandler(e){
        e.preventDefault()
-       this.$store.dispatch('register')
+       const data = {
+        username : 'sammiii',
+        email : 'samsm@gnmail',
+        password: 'sasasasas'
+       }
+       this.$store.dispatch('register' , data)
       }
      },
 }
